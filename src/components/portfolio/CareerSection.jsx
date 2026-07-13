@@ -11,7 +11,6 @@ export default function CareerSection() {
   const careerData = data?.career || [];
 
   return (
-    // ✅ Disamakan dengan section lain: py-16 sm:py-24 + scroll-mt-[100px]
     <section id="career" className="py-4 sm:py-12" >
       <SectionHeader
         title="Milestone Careers"

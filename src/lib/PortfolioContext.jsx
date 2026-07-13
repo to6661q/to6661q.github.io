@@ -9,7 +9,6 @@ export function PortfolioProvider({ children }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Ganti dengan URL Apps Script Anda
         const response = await fetch('https://script.google.com/macros/s/AKfycbzsOHz5P2I3OjNrsH-oFwYGaLOR8SzOjyxZota1K89EEHbZV23B31bwjKWK4K-AgwmL/exec');
         const result = await response.json();
         setData(result);

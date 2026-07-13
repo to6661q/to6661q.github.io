@@ -103,7 +103,6 @@ export default function LicenseSection() {
         })}
       </div>
 
-      {/* View More Button */}
       <motion.div
         initial={shouldReduceMotion ? { opacity: 0 } : { y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -116,7 +115,7 @@ export default function LicenseSection() {
           rel="noopener noreferrer"
           className="group px-6 py-3 rounded-[16px] bg-gradient-to-r from-[#11a900]/10 to-[#16d100]/10 border border-[#39FF14]/30 text-[#39FF14] text-[14px] font-semibold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(17,169,0,0.2)] transition-all font-inter"
         >
-          View more Licenses
+          All Licenses
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </a>
       </motion.div>

@@ -205,10 +205,7 @@ export default function HeroLeft() {
               }
               title={isGoogleDriveUrl(btn.url) ? "View in Google Drive Viewer" : ""}
             >
-              {/*  Icon dengan opacity yang disesuaikan */}
               <FileText className={`w-4 h-4 lg:w-5 lg:h-5 ${i === 0 ? 'text-black/60' : ''}`} />
-              
-              {/*  TEKS RESUME.PDF TRANSPARAN (putih semi-transparan untuk tombol hijau) */}
               <span className={i === 0 ? 'text-black/70' : ''}>
                 {btn.text}
               </span>

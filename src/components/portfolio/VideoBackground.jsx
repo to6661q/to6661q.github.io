@@ -64,7 +64,6 @@ export default function VideoBackground() {
 
   return (
     <>
-      {/* Background hitam dasar */}
       <div className="fixed inset-0 z-[-10] bg-[#050505]" />
 
       {/* Video Container */}

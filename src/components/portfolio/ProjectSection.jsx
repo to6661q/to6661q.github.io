@@ -141,7 +141,6 @@ export default function ProjectSection() {
             </p>
           </div>
 
-          {/* Tombol Hijau Transparan (Style sama dengan "View more") */}
           <a
             href={`https://github.com/${GITHUB_USERNAME}`}
             target="_blank"
@@ -224,7 +223,6 @@ export default function ProjectSection() {
             ))}
           </div>
 
-          {/* View More Button */}
           <motion.div
             initial={shouldReduceMotion ? { opacity: 0 } : { y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -237,7 +235,7 @@ export default function ProjectSection() {
               rel="noopener noreferrer"
               className="group px-6 py-3 rounded-[16px] bg-gradient-to-r from-[#39FF14]/10 to-[#29B800]/10 border border-[#39FF14]/30 text-[#39FF14] text-[14px] font-semibold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(57,255,20,0.2)] transition-all font-inter"
             >
-              View more Projects on GitHub
+              All Projects on GitHub
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>

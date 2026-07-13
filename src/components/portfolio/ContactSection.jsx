@@ -23,8 +23,6 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-4 sm:py-12">
-      
-      {/*  DIUBAH: Judul dipisah menjadi title dan subtitle agar berada di baris berbeda */}
       <SectionHeader 
         title="Let's Connect!"  
       />
@@ -50,7 +48,6 @@ export default function ContactSection() {
         </div>
       )}
 
-      {/*  Main Content (Hanya muncul jika data sudah berhasil dimuat) */}
       {!loading && socials.length > 0 && (
         <div className="flex flex-col items-center gap-8">
           {/* Social Links */}

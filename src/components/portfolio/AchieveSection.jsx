@@ -63,23 +63,15 @@ export default function AchieveSection() {
           const IconComponent = ICON_MAP[item.icon] || Star;
           return (
             <GlassCard key={i} delay={i * 0.08} className="h-full">
-              {/* Layout Flex: Kiri Icon, Kanan Content */}
               <div className="flex items-start gap-4 h-full">
-                
-                {/* KOLOM KIRI: Icon Box */}
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#11a900]/20 to-[#16d100]/10 flex items-center justify-center shrink-0 border border-[#39FF14]/20 mt-1">
                   <IconComponent className="w-6 h-6 text-[#39FF14]" />
                 </div>
                 
-                {/* KOLOM KANAN: Title & Info */}
                 <div className="flex flex-col gap-1.5 flex-1 min-w-0">
-                  
-                  {/* Baris 1: Title */}
                   <h3 className="text-[16px] font-outfit font-bold text-white tracking-tight leading-snug truncate">
                     {item.title}
                   </h3>
-                  
-                  {/* Baris 2: Publisher & Date */}
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-[12px] text-white/50 font-inter truncate">
                       {item.publisher}
@@ -96,8 +88,6 @@ export default function AchieveSection() {
           );
         })}
       </div>
-
-      {/* View More Button */}
       <motion.div
         initial={shouldReduceMotion ? { opacity: 0 } : { y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -110,7 +100,7 @@ export default function AchieveSection() {
           rel="noopener noreferrer"
           className="group px-6 py-3 rounded-[16px] bg-gradient-to-r from-[#11a900]/10 to-[#16d100]/10 border border-[#39FF14]/30 text-[#39FF14] text-[14px] font-semibold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(17,169,0,0.2)] transition-all font-inter"
         >
-          View more Achievements
+          All Achievements
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </a>
       </motion.div>

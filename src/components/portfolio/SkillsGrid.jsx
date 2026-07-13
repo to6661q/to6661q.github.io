@@ -23,9 +23,7 @@ export default function SkillsGrid() {
     >
       <h3 className="text-[20px] sm:text-[24px] font-outfit font-bold text-white tracking-tight mb-6 text-center">
         Tech Stack & Skills
-      </h3>
-      
-      {/*  PERUBAHAN DI SINI: grid-cols-2 untuk mobile */}
+      </h3>      
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
         {skills.map((cat, i) => {
           const IconComponent = ICON_MAP[cat.icon] || Bot;

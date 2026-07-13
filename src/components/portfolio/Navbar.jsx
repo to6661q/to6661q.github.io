@@ -85,7 +85,6 @@ export default function Navbar() {
               to.riq
             </button>
             
-            {/* Desktop Links - TEKS PUTIH PENUH */}
             <div className="hidden md:flex items-center gap-6 lg:gap-8">
               {NAV_LINKS.map((link) => (
                 <button
@@ -144,7 +143,6 @@ export default function Navbar() {
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="fixed top-0 right-0 h-full w-[280px] bg-black/50 backdrop-blur-xl border-l border-white/15 z-50 flex flex-col pt-24 px-4 gap-2 md:hidden"
             >
-              {/* Menu Links - TEKS PUTIH PENUH & CENTER */}
               {NAV_LINKS.map((link, i) => (
                 <motion.button
                   key={link}

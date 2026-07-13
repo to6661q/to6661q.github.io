@@ -15,13 +15,9 @@ import VideoBackground from "@/components/portfolio/VideoBackground";
 export default function Home() {
   return (
     <>
-      {/* VIDEO BACKGROUND - Dinamis dari Google Sheets */}
       <VideoBackground />
-
-      {/* KONTEN UTAMA */}
       <div className="relative min-h-screen overflow-x-hidden">
         <Navbar />
-
         <main className="w-full max-w-[1280px] mx-auto px-6 sm:px-12 lg:px-20 pt-[120px] md:pt-[120px]">
           {/* Hero Section */}
 <section 
